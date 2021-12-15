@@ -1,0 +1,33 @@
+body {
+  /* Fondo de color sólido
+  background-color: red;*/
+  /* Fondo de imagen a tamaño completo
+  background-image: url("../img/christmas_bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;*/
+  /* Fondo con imagen pequeña y repetida
+  background-image: url("../img/christmas_2.png");
+  background-repeat: repeat-x;
+  background-color: lightblue;
+  background-size: 120px;*/
+  /* Fondo con degragado linear */
+  background: linear-gradient(45deg, 
+    rgba(2,0,36,1) 0%, 
+    rgb(141, 102, 102) 30%,
+    rgba(170,36,36) 50%, 
+    rgba(141,102,102) 70%, 
+    rgba(2,0,36,1) 100%);
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+.intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: blue;
+  padding: 50px;
+}
