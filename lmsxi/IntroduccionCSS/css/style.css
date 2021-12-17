@@ -1,22 +1,14 @@
+/* Importando una fuente desde un archivo guardado en local 
+  En el HTML se incluyen otras fuentes empleando referencias
+  a hojas de estilo */
+@font-face {
+  font-family: "Christmas";
+  src: url(../fonts/christmas_font2.ttf);
+}
+
 body {
-  /* Fondo de color sólido
-  background-color: red;*/
-  /* Fondo de imagen a tamaño completo
-  background-image: url("../img/christmas_bg.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;*/
-  /* Fondo con imagen pequeña y repetida
-  background-image: url("../img/christmas_2.png");
-  background-repeat: repeat-x;
-  background-color: lightblue;
-  background-size: 120px;*/
-  /* Fondo con degragado linear */
-  background: linear-gradient(45deg, 
-    rgba(2,0,36,1) 0%, 
-    rgb(141, 102, 102) 30%,
-    rgba(170,36,36) 50%, 
-    rgba(141,102,102) 70%, 
-    rgba(2,0,36,1) 100%);
+  background: lightblue url('../img/christmas_2.png') repeat;
+  background-size: 120px;
   margin: 0;
   height: 100vh;
   display: flex;
@@ -24,10 +16,50 @@ body {
   justify-content: center;
   align-items: center;
 }
+h1 {
+  font-family: "Christmas";
+  font-size: 3em;
+  background: linear-gradient(45deg, red, rgb(253, 208, 208));
+  background-clip: text;
+  -webkit-background-clip: text; /* Navegadores basados en webkit */
+  -webkit-text-fill-color: transparent;
+  margin: 5px; 
+}
+h5 {
+  font-family: 'Mountains of Christmas', cursive;
+  font-size: 3em;
+  background: linear-gradient(135deg,red, lightblue);
+  background-clip: text;
+  -webkit-background-clip: text; /* Navegadores basados en webkit */
+  -webkit-text-fill-color: transparent;
+  margin: 50px 0;
+}
 .intro {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: blue;
+  background: linear-gradient(45deg, blue, purple);;
   padding: 50px;
+  border-radius: 86% 14% 87% 13% / 12% 89% 11% 88% ;
+  box-shadow: 50px 20px #6667ab;
 }
+input[type="submit"] {
+  font-family: "Mountains of Christmas";
+  font-size: 1.5em;
+  font-weight: bold;
+
+  color: white;
+  background: linear-gradient(45deg, darkblue, cyan);
+  box-shadow: 5px;
+  
+  text-transform: uppercase;
+  padding: 20px;
+  /*box-shadow: 10px 10px #6667ab;*/
+  border: 10px solid transparent;
+  border-image:url("../img/christmas_bg.jpg") 150 round;
+  border-radius: 20px;
+}
+input[type="submit"]:hover{
+  color: yellow;
+}
+

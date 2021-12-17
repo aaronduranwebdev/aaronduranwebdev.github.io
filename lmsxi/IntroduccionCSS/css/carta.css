@@ -1,0 +1,56 @@
+/* Estilos para la carta */
+body {
+    background-image: url("../img/christmas_bg.jpg");
+    background-size: 100%;
+}
+
+.wrapper {
+    font-family: "Calistoga", cursive;
+    width: 80vw;
+    background: linear-gradient(45deg, blue, purple);
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+}
+
+.wrapper form {
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+}
+
+.wrapper ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.wrapper li {
+    background: url("../img/tree.png") no-repeat left top;
+    background-size: 24px;
+    padding-left: 20px;
+    padding-top: 3px;
+}
+
+.wrapper input[type="text"] {
+    margin-left: 5px;
+}
+
+.wrap_pergamino_inicio {
+    background: url("../img/perga1.jpg") no-repeat;
+    background-size: 100%;
+}
+
+.wrap_pergamino_contenido {
+    background: url("../img/perga2.jpg") no-repeat;
+    background-size: 100%;
+}
+
+.wrap_pergamino_final {
+    background: url("../img/perga3.jpg") no-repeat;
+    background-size: 100%;
+}
+
+fieldset {
+    border: 1px dashed;
+}

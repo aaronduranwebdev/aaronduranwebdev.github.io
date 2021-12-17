@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carta</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Calistoga&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/carta.css" />
+    <script src="js/nieve.js"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="wrap_pergamino_inicio">
+            <h2>Querido <span class="bolder">Santa Claus</span>,</h2>
+        </header>
+        <content class="wrap_pergamino_contenido">
+            <form action="#" method="get" c>
+                <fieldset>
+                    <p>Me he portado...</p>
+                    <label><input type="radio" name="mePorte" id="mePorte" value="bien" checked />Bien</label>
+                    <label><input type="radio" name="mePorte" id="mePorte" value="mal" />Mal</label>
+                    <p>Y por eso, me gustaría pedirte estos regalos por Navidad:</p>
+                    <ul>
+                        <li><input type="text" name="regalo1" id="regalo1" /></li>
+                        <li><input type="text" name="regalo2" id="regalo2" /></li>
+                        <li><input type="text" name="regalo3" id="regalo3" /></li>
+                        <li><input type="text" name="regalo4" id="regalo4" /></li>
+                    </ul>
+                </fieldset>
+                <fieldset>
+                    <div><label for="cartaSanta">Contenido de la carta:</label></div>
+                    <textarea name="cartaSanta" id="cartaSanta" placeholder="Escribe aquí tu carta"></textarea>
+                </fieldset>
+                <input type="image" id="enviar" src="img/enviar.png" width="120" />
+            </form>
+        </content>
+        <footer class="wrap_pergamino_final">
+            <a href="./index.html">Volver atrás</a>
+        </footer>
+    </div>
+</body>
+
+</html>
