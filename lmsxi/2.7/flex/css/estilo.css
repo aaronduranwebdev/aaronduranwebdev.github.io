@@ -1,0 +1,173 @@
+/* Fuentes cargadas desde local */
+@font-face {
+  font-family: StarWars;
+  src: url("Starjedi.ttf");
+}
+
+@font-face {
+  font-family: RobotoSlab-Regular;
+  src: url("RobotoSlab-Regular.ttf");
+}
+
+body {
+  /* Reseteo los márgenes/paddings a 0 */
+  padding: 0;
+  margin: 0;
+  /* Asigno color al fondo */
+  background-color: grey;
+  font-family: RobotoSlab-Regular;
+}
+
+/* Wrapper que engloba a toda la página*/
+.wrapper {
+  /* Display en flex, columnas y que pegue el contenido */
+  display: flex;
+  flex-flow: column wrap;
+  flex: 1;
+}
+
+/* Wrapper que engloba el contenido principal */
+.contenido {
+  margin: auto;
+  /* Alineación central */
+  width: 90%;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 5px;
+}
+
+/* Cabecera */
+header {
+  background: url("../img/header.jpg") no-repeat top;
+  background-size: cover;
+  height: 250px;
+}
+
+header h1 {
+  /* Aplico la fuente cargada desde local */
+  font-family: StarWars;
+  color: white;
+
+}
+
+/* Menú de navegación */
+nav {
+  background-color: #1f2730;
+}
+
+/* Navegación nivel 1 */
+nav ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+nav ul li {
+  display: block;
+  float: left;
+  position: relative;
+  padding: 1rem;
+}
+
+nav ul a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Navegación nivel 2 - dropdowns */
+nav ul li ul {
+  background-color: #1f2730;
+  position: absolute;
+  transition: all 0.5s ease;
+  margin-top: 1rem;
+  left: 0;
+  display: none; /* El submenú se oculta por defecto */
+  z-index: 1; /* Y se posiciona por encima del menú padre */
+}
+
+nav ul li ul li {
+  clear: both;
+  padding: 5px 10px;
+  /*width: 100%;*/
+  min-width: 120px;
+}
+
+nav ul li:hover>ul,
+ul li ul:hover {
+  /*visibility: visible;
+  opacity: 1;*/
+  display: block;
+}
+
+/* Menú fijado al scrollear */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/* Añadir padding encima para suavizar el efecto */
+.sticky+.contenido {
+  padding-top: 65px;
+}
+/* Bloque de sinopsis */
+#sinopsis {
+  display: flex;
+}
+/* Bloque de dirección */
+#direccion {
+  display: flex;
+}
+/* Bloque de reparto */
+#reparto {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+
+}
+/* Fichas por protagonista */
+.ficha {
+  background-color: darkgray;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  border: 1px solid #887221;
+
+}
+
+/*.ficha:hover{
+  border: 2px solid #887221;
+}*/
+.ficha img {
+  width: 220px;
+  height: 308px;
+  align-self: center;
+}
+
+.ficha h3 {
+  font-style: italic;
+}
+/*#multimedia {
+
+}*/
+#escenas {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 5px;
+
+}
+
+/*#opinion {
+
+}
+#formulario-opinion {
+
+}
+*/
+#saga {
+  display: grid;
+  grid-template-columns: repeat(3, 300px);
+  /*grid-template-rows: 1;*/
+}
+footer {
+
+}

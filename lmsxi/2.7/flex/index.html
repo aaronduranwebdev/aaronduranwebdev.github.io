@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Star Wars Episodio 3: La Venganza de los Sith</title>
+  <link rel="stylesheet" href="css/estilo.css">
+
+</head>
+
+<body>
+  <div class="wrapper">
+    <header>
+      <h1>Star Wars Episodio 3: La venganza de los sith</h1>
+    </header>
+    <nav id="navegacion">
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#direccion">Dirección</a></li>
+        <li><a href="#reparto">Reparto</a>
+          <ul class="dropdown-menu">
+            <li><a href="#reparto1">Hayden Christensen</a></li>
+            <li><a href="#reparto2">Ewan McGregor</a></li>
+          </ul>
+        </li>
+        <li><a href="#plataformas">Plataformas</a></li>
+        <li><a href="#media">Multimedia</a></li>
+        <li><a href="#opinion">Opinión</a></li>
+        <li><a href="#enlaces">Enlaces</a>
+          <ul class="dropdown-menu">
+            <li><a href="https://www.starwars.com/" target="_blank">Página oficial de Star Wars</a></li>
+            <li><a href="https://www.filmaffinity.com/es/film504743.html" target="_blank">Ficha en FilmAffinity</a></li>
+            <li><a href="https://www.imdb.com/title/tt0121766/" target="_blank">Ficha en IMDB</a></li>
+          </ul>
+        </li>
+        <li><a href="#extra">Extra</a></li>
+      </ul>
+    </nav>
+    <main class="contenido">
+      <div id="sinopsis">
+        <p>Años después del inicio de las Guerra de los Clones, los nobles Caballeros Jedi lideran un gran ejército clon
+          en un combate de toda la galaxia contra los separatistas. Cuando el siniestro Sith devela un plan de mil años
+          de antigüedad para gobernar la galaxia, la República se desmorona y de sus cenizas se eleva el malvado Imperio
+          Galáctico. El heroico Jedi, Anakin Skywalker, es seducido por el lado oscuro de la Fuerza para convertirse en
+          el nuevo aprendiz del Emperador, Darth Vader. Los Jedi son diezmados, mientras Obi-Wan Kenobi y el Maestro
+          Jedi Yoda se ven obligados a esconderse. La única esperanza de la galaxia es la propia descendencia de Anakin:
+          los hijos gemelos nacidos en secreto que crecerán hasta convertirse en héroes.</p>
+      </div>
+      <div id="reparto">
+        <div class="ficha" id="reparto1">
+          <img src="img/haydenchristensen.webp" alt="">
+          <h3>Hayden Christensen</h3>
+          <p>
+            Placeholder
+          </p>
+        </div>
+        <div class="ficha">
+          <img src="img/ewanmcgregor.webp" alt="">
+          <h3>Ewan McGregor</h3>
+          <p>
+            Placeholder
+          </p>
+        </div>
+        <div class="ficha">
+          <img src="img/natalieportman.webp" alt="">
+          <h3>Natalie Portman</h3>
+          <p>
+            Placeholder
+          </p>
+        </div>
+        <div class="ficha">
+          <img src="img/ianmcdiarmid.webp" alt="">
+          <h3>Ian McDiarmid</h3>
+          <p>
+            Placeholder
+          </p>
+        </div>
+        <div class="ficha">
+          <img src="img/samuelljackson.webp" alt="">
+          <h3>Samuel L. Jackson</h3>
+          <p>
+            Placeholder
+          </p>
+        </div>
+      </div>
+      <div id="escenas">
+        <div class="escena">
+          <img src="img/escena1.jpeg" alt="">
+        </div>
+        <div class="escena">
+          <img src="img/escena2.jpeg" alt="">
+        </div>
+        <div class="escena">
+          <img src="img/escena4.jpeg" alt="">
+        </div>
+        <div class="escena">
+          <img src="img/escena5.jpeg" alt="">
+        </div>
+        <div class="escena">
+          <img src="img/escena6.jpeg" alt="">
+        </div>
+      </div>
+      <div id="saga">
+        <h2>Extra: Saga Star Wars</h2>
+        <a href="https://www.imdb.com/title/tt0120915/?ref_=tt_sims_tt_i_2" target="_blank"><img src="img/ep1.png"
+            width="200" alt="Star Wars Episodio 1: La Amenaza Fantasma"></a>
+        <a href="https://www.imdb.com/title/tt0121765/?ref_=tt_sims_tt_i_1" target="_blank"><img src="img/ep2.jpg"
+            width="200" alt="Star Wars Episodio 2: El Ataque de los Clones"></a>
+        <a href="https://www.imdb.com/title/tt0076759/?ref_=tt_sims_tt_i_6" target="_blank"><img src="img/ep4.jpg"
+            width="200" alt="Star Wars Episodio 4: Una Nueva Esperanza"></a>
+        <a href="https://www.imdb.com/title/tt0080684/?ref_=tt_sims_tt_i_5" target="_blank"><img src="img/ep5.jpg"
+            width="200" alt="Star Wars Episodio 5: El Imperio Contraataca"></a>
+        <a href="https://www.imdb.com/title/tt0086190/?ref_=tt_sims_tt_i_3" target="_blank"><img src="img/ep6.jpg"
+            width="200" alt="Star Wars Episodio 6: El Retorno del Jedi"></a>
+        <a href="https://www.imdb.com/title/tt3748528/?ref_=tt_sims_tt_i_7" target="_blank"><img src="img/rogueone.jpg"
+            width="200" alt="Rogue One: Una Historia de Star Wars"></a>
+      </div>
+    </main>
+    <footer>
+      <p>Marca Registrada y © Lucasfilm Ltd. Todos los derechos reservados.</p>
+    </footer>
+  </div>
+  <script>
+    window.onscroll = function () {
+      fijarNavbar()
+    };
+    var navbar = document.getElementById("navegacion");
+
+    var sticky = navbar.offsetTop;
+
+    function fijarNavbar() {
+      if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky")
+      } else {
+        navbar.classList.remove("sticky");
+      }
+    }
+  </script>
+</body>
+
+
+</html>
