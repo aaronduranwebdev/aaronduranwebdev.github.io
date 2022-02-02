@@ -14,7 +14,8 @@ body {
   padding: 0;
   margin: 0;
   /* Asigno color al fondo */
-  background-color: grey;
+  /*background-color: grey;*/
+  background: url("../img/background.jpg");
   font-family: RobotoSlab-Regular;
 }
 
@@ -31,8 +32,9 @@ body {
   margin: auto;
   /* Alineación central */
   width: 90%;
-  background-color: rgba(0, 0, 0, 0.5);
-  padding: 5px;
+  background-color: rgba(0, 0, 0, 0.7);
+  /*padding: 5px;*/
+  color: white;
 }
 
 /* Cabecera */
@@ -40,18 +42,23 @@ header {
   background: url("../img/header.jpg") no-repeat top;
   background-size: cover;
   height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
 }
 
 header h1 {
   /* Aplico la fuente cargada desde local */
   font-family: StarWars;
   color: white;
-
+  text-align: center;
 }
 
 /* Menú de navegación */
 nav {
-  background-color: #1f2730;
+  /* Degradado de colores en el fondo */
+  background: linear-gradient(180deg, rgba(31,39,48,1) 46%,
+   rgba(69,143,158,1) 100%);
 }
 
 /* Navegación nivel 1 */
@@ -72,10 +79,8 @@ nav ul a {
   color: white;
   text-decoration: none;
 }
-
 /* Navegación nivel 2 - dropdowns */
 nav ul li ul {
-  background-color: #1f2730;
   position: absolute;
   transition: all 0.5s ease;
   margin-top: 1rem;
@@ -85,17 +90,18 @@ nav ul li ul {
 }
 
 nav ul li ul li {
+  background: linear-gradient(180deg, rgba(31,39,48,1) 46%,
+  rgba(69,143,158,1) 100%);
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
   clear: both;
   padding: 5px 10px;
-  /*width: 100%;*/
   min-width: 120px;
 }
 
-nav ul li:hover>ul,
+nav ul li:hover > ul,
 ul li ul:hover {
-  /*visibility: visible;
-  opacity: 1;*/
-  display: block;
+  display: block; /* Se muestra cuando se resalta */
 }
 
 /* Menú fijado al scrollear */
@@ -106,12 +112,18 @@ ul li ul:hover {
 }
 
 /* Añadir padding encima para suavizar el efecto */
-.sticky+.contenido {
+.sticky + .contenido {
   padding-top: 65px;
+}
+.titulo-bloque {
+  background-color: azure;
+  text-align: center;
+  border: 1px solid yellow;
+  color: black;
 }
 /* Bloque de sinopsis */
 #sinopsis {
-  display: flex;
+  /*display: flex;*/
 }
 /* Bloque de dirección */
 #direccion {
@@ -119,24 +131,34 @@ ul li ul:hover {
 }
 /* Bloque de reparto */
 #reparto {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
   gap: 10px;
+}
 
+@media all and (min-width: 575px) {
+  #reparto {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media all and (min-width: 992px) {
+  #reparto {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 /* Fichas por protagonista */
 .ficha {
-  background-color: darkgray;
+  background: radial-gradient(circle, rgba(31,39,48,1) 50%, rgba(69,143,158,1) 100%);
   display: flex;
   flex-flow: column wrap;
   align-items: center;
   border: 1px solid #887221;
-
+  transition: 0.5s ease-in-out;
 }
 
-/*.ficha:hover{
-  border: 2px solid #887221;
-}*/
+.ficha:hover{
+  border: 2px solid #41403f;
+}
 .ficha img {
   width: 220px;
   height: 308px;
@@ -150,24 +172,34 @@ ul li ul:hover {
 
 }*/
 #escenas {
-  display: flex;
-  flex-flow: row wrap;
+  /*display: flex;
+  flex-flow: row wrap;*/
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   gap: 5px;
-
 }
-
+#escenas img {
+  object-fit: cover;
+  width: 100%;
+  max-height: 100%;
+}
 /*#opinion {
 
-}
+}*/
 #formulario-opinion {
-
+  display: flex;
 }
-*/
-#saga {
+
+.fichas-peliculas {
   display: grid;
-  grid-template-columns: repeat(3, 300px);
-  /*grid-template-rows: 1;*/
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  justify-items: center;
+}
+.fichas-peliculas img {
+  width: 300px;
 }
 footer {
-
+  padding-left: 15px;
+  background-color: #1f2730;
+  color: white;
 }
