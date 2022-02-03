@@ -5,7 +5,7 @@ https://aaronduranwebdev.github.io/
 
 Tarefa AA 2.7 Avanzado CSS
 
-0. Original (sin CSS) - https://aaronduranwebdev.github.io/lmsxi/2.7/original/pelicula.html
+0. Original (sin CSS) - https://aaronduranwebdev.github.io/lmsxi/2.7/Original/pelicula.html
 1. Flex/Grid - https://aaronduranwebdev.github.io/lmsxi/2.7/flex/
 2. Plantilla responsive - https://aaronduranwebdev.github.io/lmsxi/2.7/plantilla_original/
 3. Plantilla responsive modificada - https://aaronduranwebdev.github.io/lmsxi/2.7/plantilla/
