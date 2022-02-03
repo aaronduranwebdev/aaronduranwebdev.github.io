@@ -33,7 +33,6 @@ body {
   /* Alineación central */
   width: 90%;
   background-color: rgba(0, 0, 0, 0.7);
-  /*padding: 5px;*/
   color: white;
 }
 
@@ -122,22 +121,28 @@ ul li ul:hover {
 }
 
 .titulo-bloque {
-  background-color: azure;
+  background-color: rgb(192, 192, 192);
   text-align: center;
   border: 1px solid yellow;
   color: black;
 }
 
 /* Bloque de sinopsis */
-#sinopsis {
-  /*display: flex;*/
+#sinopsis p {
+  padding: 15px;
 }
-
 /* Bloque de dirección */
 #direccion {
   display: flex;
+  
 }
-
+#direccion p {
+  padding-left: 15px;
+}
+#direccion img {
+  width: 220px;
+  height: 308px;
+}
 /* Bloque de reparto */
 #reparto {
   display: grid;
@@ -159,7 +164,7 @@ ul li ul:hover {
 
 /* Fichas por protagonista */
 .ficha {
-  background: radial-gradient(circle, rgba(31, 39, 48, 1) 50%, rgba(69, 143, 158, 1) 100%);
+  background: radial-gradient(circle, rgba(85, 85, 85, 1) 50%, rgba(47, 47, 47, 1) 100%);
   display: flex;
   flex-flow: column wrap;
   align-items: center;
@@ -172,6 +177,7 @@ ul li ul:hover {
 }
 
 .ficha img {
+  margin-top: 10px;
   width: 220px;
   height: 308px;
   align-self: center;
@@ -185,8 +191,6 @@ ul li ul:hover {
 
 }*/
 #escenas {
-  /*display: flex;
-  flex-flow: row wrap;*/
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 5px;
