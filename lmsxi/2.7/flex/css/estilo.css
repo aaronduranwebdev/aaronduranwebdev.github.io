@@ -1,3 +1,8 @@
+/* 
+  Aarón Durán Novas
+  1º DAW - IES de Teis
+  TarefaAA2.7 Avanzado CSS
+*/
 /* Fuentes cargadas desde local */
 @font-face {
   font-family: StarWars;
@@ -32,7 +37,7 @@ body {
   margin: auto;
   /* Alineación central */
   width: 90%;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.8);
   color: white;
 }
 
@@ -53,16 +58,15 @@ header h1 {
   text-align: center;
   text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000,
     1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+  margin: 0 10px;
 }
 
 /* Menú de navegación */
 nav {
   /* Degradado de colores en el fondo */
-  background: linear-gradient(
-    180deg,
-    rgba(31, 39, 48, 1) 46%,
-    rgba(69, 143, 158, 1) 100%
-  );
+  background: linear-gradient(180deg,
+      rgba(31, 39, 48, 1) 46%,
+      rgba(69, 143, 158, 1) 100%);
 }
 
 /* Navegación nivel 1 */
@@ -97,11 +101,9 @@ nav ul li ul {
 }
 
 nav ul li ul li {
-  background: linear-gradient(
-    180deg,
-    rgba(31, 39, 48, 1) 46%,
-    rgba(69, 143, 158, 1) 100%
-  );
+  background: linear-gradient(180deg,
+      rgba(31, 39, 48, 1) 46%,
+      rgba(69, 143, 158, 1) 100%);
   border-top: 1px solid black;
   border-bottom: 1px solid black;
   clear: both;
@@ -109,7 +111,15 @@ nav ul li ul li {
   min-width: 120px;
 }
 
-nav ul li:hover > ul,
+nav ul li ul li:first-child {
+  border-top: 0;
+}
+
+nav ul li ul li:last-child {
+  border-bottom: 0;
+}
+
+nav ul li:hover>ul,
 ul li ul:hover {
   display: block;
   /* Se muestra cuando se resalta */
@@ -123,7 +133,7 @@ ul li ul:hover {
 }
 
 /* Añadir padding encima para suavizar el efecto */
-.sticky + .contenido {
+.sticky+.contenido {
   padding-top: 65px;
 }
 
@@ -138,27 +148,39 @@ ul li ul:hover {
 #sinopsis p {
   padding: 15px;
 }
+
 /* Bloque de dirección */
 #direccion {
   display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+
 #direccion p {
   padding-left: 15px;
 }
+
 #direccion img {
   width: 220px;
   height: 308px;
 }
+
 /* Bloque de reparto */
 #reparto {
   display: grid;
   grid-template-columns: minmax(0, 1fr);
   gap: 10px;
+  justify-content: center;
 }
 
 @media all and (min-width: 575px) {
   #reparto {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  #direccion {
+    flex-direction: row;
+    align-items: flex-start;
   }
 }
 
@@ -166,15 +188,18 @@ ul li ul:hover {
   #reparto {
     grid-template-columns: repeat(4, 1fr);
   }
+
+  #direccion {
+    flex-direction: row;
+    align-items: flex-start;
+  }
 }
 
 /* Fichas por protagonista */
-.ficha {
-  background: radial-gradient(
-    circle,
-    rgba(85, 85, 85, 1) 50%,
-    rgba(47, 47, 47, 1) 100%
-  );
+.ficha-reparto {
+  background: radial-gradient(circle,
+      rgba(85, 85, 85, 1) 50%,
+      rgba(47, 47, 47, 1) 100%);
   display: flex;
   flex-flow: column wrap;
   align-items: center;
@@ -182,27 +207,37 @@ ul li ul:hover {
   transition: 0.5s ease-in-out;
 }
 
-.ficha:hover {
-  border: 2px solid #41403f;
-}
-
-.ficha img {
-  margin-top: 10px;
+.ficha-reparto img {
+  /*margin-top: 10px;*/
   width: 220px;
   height: 308px;
   align-self: center;
 }
 
-.ficha h3 {
+.ficha-reparto h3 {
   font-style: italic;
 }
 
-/*#multimedia {
+#multimedia {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
-}*/
+}
+
+#multimedia iframe {
+  width: 80vw;
+  height: 30vh;
+}
+
+@media all and (min-width: 992px) {
+  #multimedia iframe {
+    height: 60vh;
+  }
+}
+
 #escenas {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
   gap: 5px;
 }
 
@@ -211,25 +246,50 @@ ul li ul:hover {
   width: 100%;
   max-height: 100%;
 }
+
 #plataformas {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  gap: 15px;
 }
+
+@media all and (min-width: 575px) {
+  #escenas {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  #plataformas {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
 .ficha-plataforma {
   border: 1px solid white;
   width: 230px;
-  padding: 5px;
+  padding: 15px;
   display: flex;
   flex-direction: column;
+  text-align: center;
+
 }
+
 .ficha-plataforma img {
   width: 230px;
   height: 230px;
+  background-color: white;
 }
+
+.ficha-plataforma a {
+  color: white;
+  text-decoration: none;
+}
+
 #opinion {
   display: flex;
-  flex-direction: row;
+  justify-items: center;
 }
+
 #formulario-opinion {
   display: flex;
 }
@@ -245,6 +305,7 @@ ul li ul:hover {
 }
 
 footer {
+  margin-top: 10px;
   padding-left: 15px;
   background-color: #1f2730;
   color: white;

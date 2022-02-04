@@ -1,3 +1,8 @@
+<!-- 
+  Aarón Durán Novas
+  1º DAW - IES de Teis
+  TarefaAA2.7 Avanzado CSS
+-->
 <!DOCTYPE html>
 <html lang="es">
 
@@ -21,16 +26,15 @@
         <li><a href="#direccion">Dirección</a></li>
         <li><a href="#reparto">Reparto</a>
           <ul class="dropdown-menu">
-            <li><a href="#reparto1">Hayden Christensen</a></li>
-            <li><a href="#reparto2">Ewan McGregor</a></li>
-            <li><a href="#reparto3">Natalie Portman</a></li>
-            <li><a href="#reparto4">Ian McDiarmid</a></li>
-            <li><a href="#reparto5">Samuel L. Jackson</a></li>
+            <li><a href="https://es.wikipedia.org/wiki/Hayden_Christensen">Hayden Christensen</a></li>
+            <li><a href="https://es.wikipedia.org/wiki/Ewan_McGregor">Ewan McGregor</a></li>
+            <li><a href="https://es.wikipedia.org/wiki/Natalie_Portman">Natalie Portman</a></li>
+            <li><a href="https://es.wikipedia.org/wiki/Ian_McDiarmid">Ian McDiarmid</a></li>
+            <li><a href="https://es.wikipedia.org/wiki/Samuel_L._Jackson">Samuel L. Jackson</a></li>
           </ul>
         </li>
         <li><a href="#plataformas">Plataformas</a></li>
         <li><a href="#media">Multimedia</a></li>
-        <li><a href="#opinion">Opinión</a></li>
         <li><a href="#enlaces">Enlaces</a>
           <ul class="dropdown-menu">
             <li><a href="https://www.starwars.com/" target="_blank">Página oficial de Star Wars</a></li>
@@ -38,7 +42,7 @@
             <li><a href="https://www.imdb.com/title/tt0121766/" target="_blank">Ficha en IMDB</a></li>
           </ul>
         </li>
-        <li><a href="#extra">Extra</a></li>
+        <li><a href="#saga">Saga</a></li>
       </ul>
     </nav>
     <main class="contenido">
@@ -55,45 +59,45 @@
       <h2 class="titulo-bloque">Dirección</h2>
       <div id="direccion">
         <img src="img/georgelucas.webp" alt="">
-        <p>George Walton Lucas Jr. (Modesto, California; 14 de mayo de 1944), conocido internacionalmente como George Lucas, es un cineasta, filántropo y empresario estadounidense. Lucas es más conocido por crear las franquicias de Star Wars e Indiana Jones y fundar Lucasfilm, LucasArts e Industrial Light & Magic. Se desempeñó como presidente de Lucasfilm antes de venderlo a The Walt Disney Company en 2012.</p>
+        <p>George Walton Lucas Jr. (Modesto, California; 14 de mayo de 1944), conocido internacionalmente como George
+          Lucas, es un cineasta, filántropo y empresario estadounidense. Lucas es más conocido por crear las franquicias
+          de Star Wars e Indiana Jones y fundar Lucasfilm, LucasArts e Industrial Light & Magic. Se desempeñó como
+          presidente de Lucasfilm antes de venderlo a The Walt Disney Company en 2012.</p>
       </div>
       <h2 class="titulo-bloque">Reparto</h2>
       <div id="reparto">
-        <div class="ficha" id="reparto1">
+        <div class="ficha-reparto" id="reparto1">
           <img src="img/haydenchristensen.webp" alt="">
           <h3>Hayden Christensen</h3>
-          <p>
-            Placeholder
-          </p>
+          <p>Anakin Skywalker / Darth Vader</p>
         </div>
-        <div class="ficha">
+        <div class="ficha-reparto">
           <img src="img/ewanmcgregor.webp" alt="">
           <h3>Ewan McGregor</h3>
-          <p>
-            Placeholder
-          </p>
+          <p>Obi-Wan Kenobi</p>
         </div>
-        <div class="ficha">
+        <div class="ficha-reparto">
           <img src="img/natalieportman.webp" alt="">
           <h3>Natalie Portman</h3>
-          <p>
-            Placeholder
-          </p>
+          <p>Padmé Amidala</p>
         </div>
-        <div class="ficha">
+        <div class="ficha-reparto">
           <img src="img/ianmcdiarmid.webp" alt="">
           <h3>Ian McDiarmid</h3>
-          <p>
-            Placeholder
-          </p>
+          <p>Sheev Palpatine / Darth Sidious</p>
         </div>
-        <div class="ficha">
+        <div class="ficha-reparto">
           <img src="img/samuelljackson.webp" alt="">
           <h3>Samuel L. Jackson</h3>
-          <p>
-            Placeholder
-          </p>
+          <p>Mace Windu</p>
         </div>
+      </div>
+      <h2 class="titulo-bloque">Multimedia</h2>
+      <div id="multimedia">
+        <iframe frameborder="0" src="https://www.youtube.com/embed/5UnjrG_N8hU"></iframe>
+        <iframe src="https://open.spotify.com/embed/album/50sxd5RESS3S74gUAFrpwf?utm_source=generator&theme=0"
+          frameBorder="0" allowfullscreen="" allow="clipboard-write; encrypted-media; fullscreen; picture-in-picture">
+        </iframe>
       </div>
       <h2 class="titulo-bloque">Escenas</h2>
       <div id="escenas">
@@ -121,26 +125,17 @@
         <div class="ficha-plataforma">
           <img src="img/disneyplus.webp" alt="Disney+">
           <h3>Disney+</h3>
+          <a href="https://www.disneyplus.com/es-es/movies/star-wars-revenge-of-the-sith/4WvbqLFumNvi" alt="Disney+">
+            Suscripción
+          </a>
         </div>
-      </div>
-      <h2 class="titulo-bloque">Opinión</h2>
-      <div id="opinion">
-        <form action="#" method="get">
-          
-            <label for="opinionResumen">Resumen</label>
-            <div>
-                <textarea id="opinionResumen" name="opinionResumen" rows="10" cols="50" placeholder="Introduce un resumen"></textarea>
-            </div>
-            <div>
-              <label>Puntuación:</label>
-              <label>1<input type="radio" name="opinionPuntuacion" value="1"></label>
-              <label>2<input type="radio" name="opinionPuntuacion" value="2"></label>
-              <label>3<input type="radio" name="opinionPuntuacion" value="3"></label>
-              <label>4<input type="radio" name="opinionPuntuacion" value="4"></label>
-              <label>5<input type="radio" name="opinionPuntuacion" value="5"></label>
-          </div>
-          
-        </form>
+        <div class="ficha-plataforma">
+          <img src="img/youtube.webp" alt="YouTube Movies">
+          <h3>YouTube Movies</h3>
+          <a href="http://www.youtube.com/watch?v=xumH1vGtQ-8" alt="YouTube Movies">
+            Alquiler (3.99€)
+          </a>
+        </div>
       </div>
       <h2 class="titulo-bloque">Saga Star Wars</h2>
       <div id="saga">
