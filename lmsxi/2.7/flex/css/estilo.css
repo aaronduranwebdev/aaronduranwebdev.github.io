@@ -51,14 +51,18 @@ header h1 {
   font-family: StarWars;
   color: white;
   text-align: center;
-  text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000
+  text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000,
+    1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
 }
 
 /* Menú de navegación */
 nav {
   /* Degradado de colores en el fondo */
-  background: linear-gradient(180deg, rgba(31, 39, 48, 1) 46%,
-      rgba(69, 143, 158, 1) 100%);
+  background: linear-gradient(
+    180deg,
+    rgba(31, 39, 48, 1) 46%,
+    rgba(69, 143, 158, 1) 100%
+  );
 }
 
 /* Navegación nivel 1 */
@@ -93,8 +97,11 @@ nav ul li ul {
 }
 
 nav ul li ul li {
-  background: linear-gradient(180deg, rgba(31, 39, 48, 1) 46%,
-      rgba(69, 143, 158, 1) 100%);
+  background: linear-gradient(
+    180deg,
+    rgba(31, 39, 48, 1) 46%,
+    rgba(69, 143, 158, 1) 100%
+  );
   border-top: 1px solid black;
   border-bottom: 1px solid black;
   clear: both;
@@ -102,7 +109,7 @@ nav ul li ul li {
   min-width: 120px;
 }
 
-nav ul li:hover>ul,
+nav ul li:hover > ul,
 ul li ul:hover {
   display: block;
   /* Se muestra cuando se resalta */
@@ -116,7 +123,7 @@ ul li ul:hover {
 }
 
 /* Añadir padding encima para suavizar el efecto */
-.sticky+.contenido {
+.sticky + .contenido {
   padding-top: 65px;
 }
 
@@ -134,7 +141,6 @@ ul li ul:hover {
 /* Bloque de dirección */
 #direccion {
   display: flex;
-  
 }
 #direccion p {
   padding-left: 15px;
@@ -164,7 +170,11 @@ ul li ul:hover {
 
 /* Fichas por protagonista */
 .ficha {
-  background: radial-gradient(circle, rgba(85, 85, 85, 1) 50%, rgba(47, 47, 47, 1) 100%);
+  background: radial-gradient(
+    circle,
+    rgba(85, 85, 85, 1) 50%,
+    rgba(47, 47, 47, 1) 100%
+  );
   display: flex;
   flex-flow: column wrap;
   align-items: center;
@@ -201,10 +211,25 @@ ul li ul:hover {
   width: 100%;
   max-height: 100%;
 }
-
-/*#opinion {
-
-}*/
+#plataformas {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.ficha-plataforma {
+  border: 1px solid white;
+  width: 230px;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+}
+.ficha-plataforma img {
+  width: 230px;
+  height: 230px;
+}
+#opinion {
+  display: flex;
+  flex-direction: row;
+}
 #formulario-opinion {
   display: flex;
 }
