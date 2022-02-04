@@ -47,4 +47,9 @@ Listado de propiedades CSS usadas en el ejercicio
 - :last-child
 - :hover
 
+![Diseño 1](https://raw.githubusercontent.com/aaronduranwebdev/aaronduranwebdev.github.io/main/lmsxi/2.7/dise%C3%B1o_1.jpg)
+![Diseño 2](https://raw.githubusercontent.com/aaronduranwebdev/aaronduranwebdev.github.io/main/lmsxi/2.7/dise%C3%B1o_2.jpg)
+![Diseño 3](https://raw.githubusercontent.com/aaronduranwebdev/aaronduranwebdev.github.io/main/lmsxi/2.7/dise%C3%B1o_3.jpg)
+![Diseño 4](https://raw.githubusercontent.com/aaronduranwebdev/aaronduranwebdev.github.io/main/lmsxi/2.7/dise%C3%B1o_4.jpg)
+
 [![Licencia: CC BY-NC-SA 4.0](https://licensebuttons.net/l/by-nc-sa/4.0/80x15.png)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
