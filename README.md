@@ -7,8 +7,6 @@ https://aaronduranwebdev.github.io/
 3. Plantilla responsive - https://aaronduranwebdev.github.io/lmsxi/2.7/plantilla_original/
 4. Bootstrap - https://aaronduranwebdev.github.io/lmsxi/2.7/bootstrap/
 
-# Welcome to StackEdit!
-
 Listado de propiedades CSS usadas en el ejercicio
 
 ## Posicionamiento / alineación / tamaños
