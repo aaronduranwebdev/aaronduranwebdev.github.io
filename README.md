@@ -9,33 +9,28 @@ https://aaronduranwebdev.github.io/
 
 Listado de propiedades CSS usadas en el ejercicio
 
-## Posicionamiento / alineación / tamaños
-**Posicionamiento**
+## Posicionamiento
 - margin
 - padding
-- display
+- display (flex/grid)
 - float
 - z-index
-- *flex*
 - flex-flow
-- *grid*
 - grid-template-columns
 - gap
-**Tamaños**
--  width
+## Tamaños
+- width
 - height
-**Alineación**
+## Alineación
 - align-content
 - justify-content
 - align-items
 - justify-items
 - align-self
-
 ## Bordes, colores y fondo
  - border
  - color
  - background
-
 ## Listas
 - list-style
 ## Texto / fuentes
@@ -45,11 +40,8 @@ Listado de propiedades CSS usadas en el ejercicio
 - text-align
 - text-shadow
 - text-decoration
-
-
 ## Animaciones
 - transition
-
 ## Pseudo-clases
 - :first-child
 - :last-child
