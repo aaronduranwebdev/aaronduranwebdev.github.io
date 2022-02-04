@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap - Episodio 3: La Venganza de los Sith</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/estilo.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a href="#" class="navbar-brand">Star Wars</a>
+      <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <div class="navbar-nav">
+          <a href="#" class="nav-item nav-link active">Inicio</a>
+          <a href="#sinopsis" class="nav-item nav-link">Sinopsis</a>
+          <a href="#reparto" class="nav-item nav-link">Reparto</a>
+          <a href="#escenas" class="nav-item nav-link">Escenas</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- Contenedor principal -->
+  <div class="container bg-dark text-white py-3">
+    <!-- Sinopsis -->
+    <div id="sinopsis">
+      <div class="p-5 mb-4 bg-dark border rounded-3">
+        <h1>Star Wars Episodio 3: La Venganza de los Sith</h1>
+        <p class="lead">Años después del inicio de las Guerra de los Clones, los nobles Caballeros Jedi lideran un gran
+          ejército clon
+          en un combate de toda la galaxia contra los separatistas. Cuando el siniestro Sith devela un plan de mil años
+          de antigüedad para gobernar la galaxia, la República se desmorona y de sus cenizas se eleva el malvado Imperio
+          Galáctico. El heroico Jedi, Anakin Skywalker, es seducido por el lado oscuro de la Fuerza para convertirse en
+          el nuevo aprendiz del Emperador, Darth Vader. Los Jedi son diezmados, mientras Obi-Wan Kenobi y el Maestro
+          Jedi Yoda se ven obligados a esconderse. La única esperanza de la galaxia es la propia descendencia de Anakin:
+          los hijos gemelos nacidos en secreto que crecerán hasta convertirse en héroes.</p>
+      </div>
+
+    </div>
+    <!-- Reparto -->
+    <div id="reparto" class="border border-primary py-1">
+      <div class="row d-flex justify-content-center">
+        <div class="card bg-dark" style="width: 250px;">
+          <img src="img/haydenchristensen.webp" class="card-img-top" alt="Hayden Christensen">
+          <div class="card-body text-center">
+            <h5 class="card-title">Hayden Christensen</h5>
+            <p class="card-text">Anakin Skywalker / Darth Vader</p>
+            <a href="#" class="btn btn-primary">Wikipedia</a>
+          </div>
+        </div>
+        <div class="card bg-dark" style="width: 250px;">
+          <img src="img/ewanmcgregor.webp" class="card-img-top" alt="Hayden Christensen">
+          <div class="card-body text-center">
+            <h5 class="card-title">Ewan McGregor</h5>
+            <p class="card-text">Obi-Wan Kenobi</p>
+            <a href="#" class="btn btn-primary">Wikipedia</a>
+          </div>
+        </div>
+        <div class="card bg-dark" style="width: 250px;">
+          <img src="img/natalieportman.webp" class="card-img-top" alt="Hayden Christensen">
+          <div class="card-body text-center">
+            <h5 class="card-title">Natalie Portman</h5>
+            <p class="card-text">Padmé Amidala</p>
+            <a href="#" class="btn btn-primary">Wikipedia</a>
+          </div>
+        </div>
+        <div class="card bg-dark" style="width: 250px;">
+          <img src="img/ianmcdiarmid.webp" class="card-img-top" alt="Hayden Christensen">
+          <div class="card-body text-center">
+            <h5 class="card-title">Ian McDiarmid</h5>
+            <p class="card-text">Sheev Palpatine / Darth Sidious</p>
+            <a href="#" class="btn btn-primary">Wikipedia</a>
+          </div>
+        </div>
+        <div class="card bg-dark" style="width: 250px;">
+          <img src="img/samuelljackson.webp" class="card-img-top" alt="Hayden Christensen">
+          <div class="card-body text-center">
+            <h5 class="card-title">Samuel L. Jackson</h5>
+            <p class="card-text">Mace Windu</p>
+            <a href="#" class="btn btn-primary">Wikipedia</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Escenas -->
+    <div id="escenas" class="carousel slide border border-primary mt-3" data-bs-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-bs-target="#escenas" data-bs-slide-to="0" class="active"></li>
+        <li data-bs-target="#escenas" data-bs-slide-to="1"></li>
+        <li data-bs-target="#escenas" data-bs-slide-to="2"></li>
+        <li data-bs-target="#escenas" data-bs-slide-to="3"></li>
+        <li data-bs-target="#escenas" data-bs-slide-to="4"></li>
+        <li data-bs-target="#escenas" data-bs-slide-to="5"></li>
+      </ol>
+
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="img/escena1.jpeg" class="d-block w-100" alt="Slide 1">
+        </div>
+        <div class="carousel-item">
+          <img src="img/escena2.jpeg" class="d-block w-100" alt="Slide 2">
+        </div>
+        <div class="carousel-item">
+          <img src="img/escena3.jpeg" class="d-block w-100" alt="Slide 3">
+        </div>
+        <div class="carousel-item">
+          <img src="img/escena4.jpeg" class="d-block w-100" alt="Slide 3">
+        </div>
+        <div class="carousel-item">
+          <img src="img/escena5.jpeg" class="d-block w-100" alt="Slide 3">
+        </div>
+        <div class="carousel-item">
+          <img src="img/escena6.webp" class="d-block w-100" alt="Slide 3">
+        </div>
+      </div>
+
+      <a class="carousel-control-prev" href="#escenas" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </a>
+      <a class="carousel-control-next" href="#escenas" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </a>
+    </div>
+    <!-- Trailer -->
+    <div class="ratio ratio-16x9 border border-primary mt-3">
+      <iframe src="https://www.youtube.com/embed/5UnjrG_N8hU" title="YouTube video" allowfullscreen></iframe>
+    </div>
+  </div>
+  <div class="container-fluid bg-dark text-white">
+    <footer>
+      <div class="row">
+        <div class="col-md-6">
+          <p>Marca Registrada y © Lucasfilm Ltd. Todos los derechos reservados.</p>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="js/bootstrap.min.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

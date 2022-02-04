@@ -1,0 +1,8 @@
+body {
+  background: url("../img/background.jpg");
+}
+/* Sobreescribo las propiedades del elemento img */
+.card img {
+  width: 220px;
+  height: 308px;
+}

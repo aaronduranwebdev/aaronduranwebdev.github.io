@@ -7,28 +7,54 @@ https://aaronduranwebdev.github.io/
 3. Plantilla responsive - https://aaronduranwebdev.github.io/lmsxi/2.7/plantilla_original/
 4. Bootstrap - https://aaronduranwebdev.github.io/lmsxi/2.7/bootstrap/
 
-Listado de propiedades CSS usadas en el ejercicio:
+# Welcome to StackEdit!
 
-@font-face - Permite definir una fuente para usar en la hoja de estilos
+Listado de propiedades CSS usadas en el ejercicio
 
-padding, margin, width, height
+## Posicionamiento / alineación / tamaños
+- **Posicionamiento**
+-- margin
+-- padding
+-- display
+-- float
+-- z-index
+-- *flex*
+--- flex-flow
+-- *grid*
+--- grid-template-columns
+-- gap
+- **Tamaños**
+--  width
+-- height
+- **Alineación**
+-- align-content
+-- justify-content
+-- align-items
+-- justify-items
+-- align-self
 
-float, z-index
-display: flex, flex-flow
-display: grid, grid-template-columns
-gap
+## Bordes, colores y fondo
+ - border
+ - color
+ - background
 
-align-content, justify-content, align-items, justify-items, align-self
+## Listas
+- list-style
+## Texto / fuentes
+- @font-face
+- font-style
+- font-family
+- text-align
+- text-shadow
+- text-decoration
 
-text-align, text-shadow, text-decoration, font-style, font-family
 
-border, background, color
+## Animaciones
+- transition
 
-list-style
-
-transition
-
-:first-child
-:last-child
+## Pseudo-clases
+- :first-child
+- :last-child
+- :hover
 
 [![Licencia: CC BY-NC-SA 4.0](https://licensebuttons.net/l/by-nc-sa/4.0/80x15.png)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
