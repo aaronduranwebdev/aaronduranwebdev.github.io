@@ -10,7 +10,7 @@ https://aaronduranwebdev.github.io/
 Listado de propiedades CSS usadas en el ejercicio
 
 ## Posicionamiento / alineación / tamaños
-- **Posicionamiento**
+**Posicionamiento**
 - margin
 - padding
 - display
@@ -21,10 +21,10 @@ Listado de propiedades CSS usadas en el ejercicio
 - *grid*
 - grid-template-columns
 - gap
-- **Tamaños**
+**Tamaños**
 -  width
 - height
-- **Alineación**
+**Alineación**
 - align-content
 - justify-content
 - align-items
