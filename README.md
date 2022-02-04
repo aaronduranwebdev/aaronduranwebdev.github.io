@@ -11,25 +11,25 @@ Listado de propiedades CSS usadas en el ejercicio
 
 ## Posicionamiento / alineación / tamaños
 - **Posicionamiento**
--- margin
--- padding
--- display
--- float
--- z-index
--- *flex*
---- flex-flow
--- *grid*
---- grid-template-columns
--- gap
+- margin
+- padding
+- display
+- float
+- z-index
+- *flex*
+- flex-flow
+- *grid*
+- grid-template-columns
+- gap
 - **Tamaños**
---  width
--- height
+-  width
+- height
 - **Alineación**
--- align-content
--- justify-content
--- align-items
--- justify-items
--- align-self
+- align-content
+- justify-content
+- align-items
+- justify-items
+- align-self
 
 ## Bordes, colores y fondo
  - border
