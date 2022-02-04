@@ -11,34 +11,18 @@ Listado de propiedades CSS usadas en el ejercicio:
 
 @font-face - Permite definir una fuente para usar en la hoja de estilos
 
-padding
-margin
-width
-height
+padding, margin, width, height
 
-float
-z-index
-display: flex
-flex-flow
-display: grid
-grid-template-columns
+float, z-index
+display: flex, flex-flow
+display: grid, grid-template-columns
 gap
 
-align-content
-justify-content
-align-items
-justify-items
-align-self
+align-content, justify-content, align-items, justify-items, align-self
 
-text-align
-text-shadow
-text-decoration
-font-style
-font-family
+text-align, text-shadow, text-decoration, font-style, font-family
 
-border
-background
-color
+border, background, color
 
 list-style
 
